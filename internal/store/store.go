@@ -1,13 +1,15 @@
-package store 
+package store
 
-var taskStore = make(map[string]Task)
+import "go-alert-backend/internal/model"
 
-func AddTask(task Task) {
+var taskStore = make(map[string]model.Task)
+
+func AddTask(task model.Task) {
 	taskStore[task.ID] = task
 }
 
-func GetAllTasks() []Task {
-	tasks := []Task{}
+func GetAllTasks() []model.Task {
+	tasks := []model.Task{}
 	for _, task := range taskStore {
 		tasks = append(tasks, task)
 	}

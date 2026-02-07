@@ -1,5 +1,5 @@
-package model 
+package model
 
-type Task struct{
-	ID,Title,Status string
+type Task struct {
+	ID, Title, Status string
 }
