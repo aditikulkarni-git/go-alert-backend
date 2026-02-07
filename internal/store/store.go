@@ -1,4 +1,4 @@
-package main
+package store 
 
 var taskStore = make(map[string]Task)
 
